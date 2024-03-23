@@ -1,0 +1,309 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e1e9f4 ; /* Couleur de fond de la barre de navigation */
+    padding: 0px 10px;
+    
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Style des liens dans la barre de navigation */
+nav a {
+    display: block;
+    color: #47484a;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Changement de couleur de fond au survol */
+nav a:hover {
+    background-color: #a5bedc;
+}
+
+/* Style du lien actif */
+nav .active {
+    font-weight: bold;
+    /*background-color: #47484a;*/
+}
+
+/* Style du logo pour le positionner à gauche */
+.logo img {
+    margin-right: 10px; /* Ajustez la marge selon vos besoins */
+}
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: 550px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 16.5%;
+    bottom: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.header-text p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Ajoutez un espace entre les éléments de la galerie */
+    margin-left: 300px;  /* Marge à gauche */
+    margin-right: 300px; /* Marge à droite */
+}
+
+.category-photos {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px; /* Ajoutez un espace entre les éléments de la catégorie */
+}
+
+.category-photos img {
+    margin-top: 15px ;
+    margin-bottom: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px  #47484a;
+    transition: transform 0.3s ease-in-out; /* Ajoutez une transition pour une animation fluide */
+}
+
+.category-photos img:hover {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+}
+
+
+.category-photos.active {
+    display: flex;
+}
+.categories-container-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-container {
+    text-align: center;
+}
+
+#categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ajout pour éliminer la marge par défaut */
+    gap: 35px;
+}
+
+#categories-list li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color:#8596ab;
+    cursor: pointer;
+    transition: color 0.3s, text-decoration 0.3s; /* Ajout des transitions */
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+   
+    
+    
+}
+
+#categories-list li:hover {
+    color:  #47484a; /* Couleur au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+.yoga img{
+    height: 300px;
+    width: 250px;
+}
+.video-container{
+    margin-top: 20px;
+    border-radius: 15px; /* Bordure arrondie */
+    overflow: hidden;   /* Pour cacher le débordement des coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre */
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 40px;
+}
+video{
+    width: 100%;
+    height: 400px;
+    display: block;
+    
+}
+.titre h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 40px;
+
+    color: #47484a;;
+
+}
+.titre h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #47484a;;
+}
+body{
+    background-color:#e1e9f4 ;
+}
+/* Footer styles */
+.footer-section {
+    background-color: #47484a;
+    color: #e1e9f4;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+}
+
+.footer-logo-item {
+    margin-bottom: 30px;
+}
+
+.f-logo img {
+    width: 100px; /* Adjust the logo size as needed */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #e1e9f4;
+    font-size: 18px;
+}
+.social-links i:hover {
+     color: #a5bedc;
+}
+.container-1{
+    width: 100%;
+    padding-bottom: 20%;
+    margin-bottom: 0;
+}
+.colonne {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.colonne p {
+    padding-top: 20px;
+}
+.colonne-1{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.colonne-2{
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 {
+    width: 17%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 a {
+    color: #e1e9f4;
+}
+.container-1 h5 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.footer-blog .links {
+    margin-bottom: 15px;
+    display: block;
+    color: #e1e9f4;
+    text-decoration: none;
+}
+.footer-blog .links:hover {
+    color: #a5bedc;
+}
+.workout-program li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.workout-program a {
+    color: #e1e9f4;
+    text-decoration: none;
+    font-size: 16px;
+}
+.workout-program a:hover {
+    color: #a5bedc;
+}
+.footer-info {
+    list-style: none;
+    padding: 0;
+}
+.footer-info li {
+    margin-bottom: 10px;
+}
+.footer-info i {
+    margin-right: 10px;
+    color: #a5bedc;
+}
+.copyright-text {
+    background-color: #1f1f1f;
+    padding: 5px 0;
+    margin-bottom: 0;
+    color: #e1e9f4;
+    font-size: 14px;
+    height: 60px;
+}
+.copyright-text p {
+    text-align: center;
+    padding-top: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
