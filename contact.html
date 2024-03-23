@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+    
+        <title>Contact</title>
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="formulaire.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Barre de navigation -->
+        <nav>
+            <div class="logo">
+                <img src="logo.png" width="195" height="50">
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="workout.html">Programmes d'Entraînement</a></li>
+                <li><a href="nutrition.html" >Nutrition</a></li>
+                <li><a href="testfinal.html">Témoignages Clients</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="aboutfinal.html">À Propos</a></li>
+            </ul>
+        </nav>
+        <!--    
+        <h1>Contactez nous</h1>
+        <fieldset>
+            <h2>Merci de remplir le formulaire ci-dessous</h2>
+            <input type="text" name="nom" id="nom" placeholder="Nom" required>
+            <br>
+            <br>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+            <br>
+            <br>
+            <input type="text" name="email" id="email" placeholder="E-mail" required>
+            <br>
+            <br>
+            <input type="text" name="telephone" id="telephone" placeholder="Téléphone" required>
+            <br>
+            <br>
+            <select name="objet" id="objet" required>
+                <option value="" disabled selected hidden>objet</option>
+                <option value="1">Commentaire et réclamation</option>
+                <option value="2">Demande d'information</option>
+                <option value="3">Demande de sponsoring</option>
+                <option value="4">Demande de partenariat</option>
+            </select>
+            <br>
+            <br>
+            <textarea placeholder="Ecrivez votre message ici..." style="resize: vertical; overflow: auto; min-height: 50px; width: 100%;" required></textarea>
+            <br>
+            <br>
+            <button type="submit">Envoyer</button>
+        </fieldset>
+        -->
+
+        <!-- Formulaire -->
+        <header>
+            <img src="contact.jpg" alt="Image de la galerie">
+            <div class="header-text">
+                <h1>Contact</h1>
+            </div>
+        </header>
+
+        <br>
+
+        <div>
+            <h3>Contactez-nous</h3>
+        </div>
+
+        <fieldset>
+            <h2>Merci de remplir le formulaire ci-dessous</h2>
+            <br>
+            <input type="text" name="nom" id="nom" placeholder="Nom" required onclick="toggleClass(this)">
+            <br>
+            <br>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required onclick="toggleClass(this)">
+            <br>
+            <br>
+            <input type="text" name="email" id="email" placeholder="E-mail" required onclick="toggleClass(this)">
+            <br>
+            <br>
+            <input type="text" name="telephone" id="telephone" placeholder="Téléphone" required onclick="toggleClass(this)">
+            <br>
+            <br>
+            <select name="objet" id="objet" required onclick="toggleClass(this)">
+                <option value="" disabled selected hidden>objet</option>
+                <option value="1">Commentaire et réclamation</option>
+                <option value="2">Demande d'information</option>
+                <option value="3">Demande de sponsoring</option>
+                <option value="4">Demande de partenariat</option>
+            </select>
+            <br>
+            <br>
+            <textarea placeholder="Ecrivez votre message ici..." style="resize: vertical; overflow: auto; min-height: 50px; width: 100%;" required onclick="toggleClass(this)"></textarea>
+            <br>
+            <br>
+            <button type="submit" onclick="toggleClass(this)">Envoyer</button>
+        </fieldset>
+
+        <span class="classe">
+            <i class="fa-solid fa-circle-play"></i>
+            Découvrez notre ambience!</span>
+            <video width="640" height="360" controls>
+                <source src="contact.mp4" type="video/mp4">
+            </video>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Pied de page -->
+        <footer class="footer-section">
+            <div class="container-1">
+                <div class="row-2">
+                    <div class="colonne">
+                        <div class="footer-logo-item">
+                            <div class="f-logo">
+                                <a href="index.html"><img src="logo.png" alt></a>
+                            </div>
+                            <p>Découvrez MOTIFIT, votre destination pour la remise en forme optimale. Une salle de sport où la passion et la performance se rencontrent.</p>
+                            <div class="social-links">
+                                <h6 style="font-size: 20px;">Suivez Nous</h6>
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://fr.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colonne-1">
+                        
+                            <h5>Liens Utiles</h5>
+                            <div class="footer-blog">
+                                <a href="workout.html" class="links"><i class="fa-solid fa-arrow-right"></i>Programmes d'Entraînement</a>
+                                <a href="nutrition.html" class="links"><i class="fa-solid fa-arrow-right"></i>Nutrition</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Blog</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Galerie</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Contact</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>À Propos</a>
+                            </div>
+                        
+                    </div>
+                    <div class="colonne-2">
+                        
+                            <h5>Programmes</h5>
+                            <ul class="workout-program">
+                                <li><a href="workout.html">Boxe</a></li>
+                                <li><a href="workout.html">Weight Lifting</a></li>
+                                <li><a href="workout.html">Cardio</a></li>
+                                <li><a href="workout.html">Zumba</a></li>
+                                <li><a href="workout.html">Yoga</a></li>
+                                <li><a href="workout.html">Cycling</a></li>
+                            </ul>
+                        
+                    </div>
+                    <div class="colonne-3">
+                        
+                            <h5>Informations</h5>
+                            <ul class="footer-info">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Téléphone:</span>
+                                    +216 98 245 679
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>Email:</span>
+                                    <a href="mailto:info@motifit.com">info@motifit.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Addresse:</span>
+                                    24 Rue d'Istanboul, Tunis
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; 2023 Fitness & Bien-être. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script>function toggleClass(element) {
+            element.classList.toggle('hovered');
+        }</script>
+    </body>
+</html>
