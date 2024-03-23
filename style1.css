@@ -1,0 +1,446 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    overflow: hidden;
+}
+body{
+    background-color: #e1e9f4;
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e1e9f4 ;
+    padding: 0px 10px;
+}
+
+/* Style for the logo */
+.logo img {
+    width: 195px;
+    height: 50px;
+}
+
+/* Style for the navbar */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+/* Style for the navbar links */
+.navbar li {
+    margin: 0 10px;
+}
+
+/* Style for the navbar links (active state) */
+.navbar .active {
+    font-weight: bold; 
+}
+nav ul a {
+    display: block;
+    color: #47484a;
+    text-decoration: none;
+}
+
+.header-image {
+    background-image: url("pexels-li-sun-2294403.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.header-image div{
+    color: white;
+    /*margin-bottom: 10px; *//* Marge en bas */
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-top: 15%;
+    padding-left:5%;
+    text-align: left;
+}
+.p-container {
+    margin-top: 5%;
+    display: flex;
+    gap: 3%;
+    margin-right: 13%;
+    margin-left: 13%;
+}
+.program-section {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    height: 700px;
+}
+
+.program {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.program:hover {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #8596ab;
+    border-color: #8596ab;
+    transform: scale(1.05);
+}
+
+#classes-wrap-1 {
+    
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    
+    overflow: hidden;
+}
+#classes-wrap-2{
+    
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#classes-wrap-3{
+    
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 8px 8px;
+}
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.text a {
+    text-decoration: none;
+    color: #47484a;
+}
+#horaire {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-top: 2%;
+   padding-bottom: 2%;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #47484a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.classtime-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 60px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #8596ab;
+}
+.workout-time {
+    background-color:#8596ab ;
+    font-weight: bold;
+}
+h6 {
+    margin: 0;
+}
+.workout-day{
+    height: 100px;
+    background-color: #a5bedc;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.workout-day:hover{
+    background-color: #e1e9f4;
+}
+.workout-day span {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+
+.container {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#pricing {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-top: 5%;
+   padding-bottom: 2%;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #47484a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ligne {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-price-plan {
+    background-color: #e1e9f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.single-price-plan h4{
+    text-transform: uppercase;
+    color: #666f7a;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+
+}
+.elementl {
+    color: #47484a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.price-plan h2 {
+    color: #666f7a;
+    font-size: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+
+.price-plan p {
+    color: #666f7a;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.single-price-plan ul {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+#button {
+    background-color: #a5bedc;
+    color: #47484a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+#button:hover {
+    background-color: #8596ab;
+    color: #e1e9f4;
+}
+.single-price-plan:hover {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #47484a;
+    border-color: #8596ab;
+    transform: scale(1.05);
+
+}
+
+/* Footer Styles */
+/*footer {
+    background-color: #666f7a;
+    color: #e1e9f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e1e9f4;
+    font-weight: bold;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}*/
+/* Footer styles */
+.footer-section {
+    background-color: #47484a;
+    color: #e1e9f4;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+}
+
+.footer-logo-item {
+    margin-bottom: 30px;
+}
+
+.f-logo img {
+    width: 100px; /* Adjust the logo size as needed */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #e1e9f4;
+    font-size: 18px;
+}
+.social-links i:hover {
+     color: #a5bedc;
+}
+.container-1{
+    width: 100%;
+    padding-bottom: 20%;
+    margin-bottom: 0;
+}
+.colonne {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.colonne p {
+    padding-top: 20px;
+}
+.colonne-1{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.colonne-2{
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 {
+    width: 17%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 a {
+    color: #e1e9f4;
+}
+.container-1 h5 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.footer-blog .links {
+    margin-bottom: 15px;
+    display: block;
+    color: #e1e9f4;
+    text-decoration: none;
+}
+.footer-blog .links:hover {
+    color: #a5bedc;
+}
+.workout-program li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.workout-program a {
+    color: #e1e9f4;
+    text-decoration: none;
+    font-size: 16px;
+}
+.workout-program a:hover {
+    color: #a5bedc;
+}
+.footer-info {
+    list-style: none;
+    padding: 0;
+}
+.footer-info li {
+    margin-bottom: 10px;
+}
+.footer-info i {
+    margin-right: 10px;
+    color: #a5bedc;
+}
+.copyright-text {
+    background-color: #1f1f1f;
+    padding: 5px 0;
+    margin-bottom: 0;
+    color: #e1e9f4;
+    font-size: 14px;
+    height: 60px;
+}
+.copyright-text p {
+    text-align: center;
+    padding-top: 15px;
+}
