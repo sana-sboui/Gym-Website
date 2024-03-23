@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+    
+        <title>Blog</title>
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="blog.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Barre de navigation -->
+        <nav>
+            <div class="logo">
+                <img src="logo.png" width="195" height="50">
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="workout.html">Programmes d'Entraînement</a></li>
+                <li><a href="nutrition.html" >Nutrition</a></li>
+                <li><a href="testfinal.html">Témoignages Clients</a></li>
+                <li><a href="blog.html" class='active'>Blog</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutfinal.html">À Propos</a></li>
+            </ul>
+        </nav>
+
+        <!--Blog-->
+        <header>
+            <img src="blog.png" alt="Image de la galerie">
+            <div class="header-text">
+                <h1>Blog</h1>
+            </div>
+        </header>
+
+        <br>
+
+        <div>
+            <h3>Les tendances fitness en 2023</h3>
+        </div>
+
+        <br>
+
+        <div class="card-container-2">
+            <div class="card">
+                <div class="card-header">
+                    <img src="hiit.png" alt="Stress Management">
+                    Innovations en matière d'entraînement en intervalles de haute intensité (HIIT) 
+                </div>
+                <div class="card-body">
+                    <p>Explorez le domaine passionnant de l'entraînement en intervalles de haute intensité (HIIT) en vous plongeant dans les dernières variations d'entraînement. Que ce soit l'intégration d'exercices non conventionnels ou de schémas de timing uniques, le HIIT continue d'évoluer. Discutez des avantages multifacettes du HIIT pour différents objectifs de remise en forme, de la perte de graisse au gain musculaire. En outre, mettez en lumière les avancées technologiques et les applications qui améliorent l'expérience du HIIT, offrant aux utilisateurs des outils pour optimiser leurs séances d'entraînement.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="virtuelle.jpeg" alt="Expériences de fitness virtuelles">
+                    Expériences de fitness virtuelles
+                </div>
+                <div class="card-body">
+                    <p>Lancez-vous dans le monde émergent des cours de fitness virtuels. Examinez l'efficacité de ces cours, répondant aux besoins des personnes recherchant des solutions d'entraînement pratiques à domicile. Plongez dans les plateformes virtuelles et les applications populaires, évaluant leurs fonctionnalités et avantages. De plus, discutez de l'impact transformateur de la technologie sur l'avenir du fitness virtuel, explorant comment la réalité augmentée et les éléments interactifs redéfinissent notre manière de participer aux entraînements à distance.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="montre.jpg" alt="Technologie portable dans le fitness">
+                    Technologie portable dans le fitness
+                </div>
+                <div class="card-body">
+                    <p>Avancez vers l'avenir du fitness avec une exploration complète des dernières technologies portables. Des trackers de fitness aux montres intelligentes, découvrez les fonctionnalités de pointe qui rendent ces appareils indispensables pour les routines d'entraînement. Plongez dans les effets transformateurs des dispositifs portables sur notre approche du fitness, suivant tout, de la fréquence cardiaque aux habitudes de sommeil. Mettez en avant les tendances innovantes des technologies portables dans le fitness, montrant comment la technologie continue d'améliorer notre compréhension de la santé personnelle et des performances.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <h3>Nos conseils</h3>
+        </div>
+
+        <br>
+
+        <div class="liste-des-conseils">
+            <div class="conseil" onclick="toggleClass(this)">
+                <img class="conseil-photo" src="progperso.jpg" alt="conseil1">
+                <div class="para-conseil">
+                    <h6>Programmes d'entraînement personnalisés</h6>
+                    <p>Créer un programme d'entraînement personnalisé est essentiel pour atteindre vos objectifs fitness. Envisagez des routines adaptées à votre niveau de forme actuel, vos préférences et vos objectifs. Incluez une variété d'exercices pour stimuler différents groupes musculaires et assurez-vous d'intégrer une progression progressive pour maintenir la motivation.</p>
+                </div>
+            </div>
+            <div class="conseil" onclick="toggleClass(this)">
+                <img class="conseil-photo" src="dom.jpg" alt="conseil1">
+                <div class="para-conseil">
+                    <h6>Entraînement à domicile et alternatives sans équipement</h6>
+                    <p>Si vous préférez vous entraîner à la maison, explorez des programmes adaptés sans équipement ou avec des équipements peu coûteux comme des haltères légères. Des exercices tels que les squats, les fentes et les pompes peuvent être efficaces pour le renforcement musculaire à domicile.</p>
+                </div>
+            </div>
+            <div class="conseil" onclick="toggleClass(this)">
+                <img class="conseil-photo" src="perte.jpg" alt="conseil1">
+                <div class="para-conseil">
+                    <h6>Conseils pour la perte de poids durable</h6>
+                    <p>Plutôt que de se concentrer sur des régimes stricts, concentrez-vous sur des habitudes alimentaires durables. Optez pour des repas équilibrés, contrôlez les portions et incorporez des exercices réguliers pour une perte de poids saine et durable.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <!-- Pied de page -->
+        <footer class="footer-section">
+            <div class="container-1">
+                <div class="row-2">
+                    <div class="colonne">
+                        <div class="footer-logo-item">
+                            <div class="f-logo">
+                                <a href="index.html"><img src="logo.png" alt></a>
+                            </div>
+                            <p>Découvrez MOTIFIT, votre destination pour la remise en forme optimale. Une salle de sport où la passion et la performance se rencontrent.</p>
+                            <div class="social-links">
+                                <h6 style="font-size: 20px;">Suivez Nous</h6>
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://fr.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colonne-1">
+                        
+                            <h5>Liens Utiles</h5>
+                            <div class="footer-blog">
+                                <a href="workout.html" class="links"><i class="fa-solid fa-arrow-right"></i>Programmes d'Entraînement</a>
+                                <a href="nutrition.html" class="links"><i class="fa-solid fa-arrow-right"></i>Nutrition</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Blog</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Galerie</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>Contact</a>
+                                <a href="#" class="links"><i class="fa-solid fa-arrow-right"></i>À Propos</a>
+                            </div>
+                        
+                    </div>
+                    <div class="colonne-2">
+                        
+                            <h5>Programmes</h5>
+                            <ul class="workout-program">
+                                <li><a href="workout.html">Boxe</a></li>
+                                <li><a href="workout.html">Weight Lifting</a></li>
+                                <li><a href="workout.html">Cardio</a></li>
+                                <li><a href="workout.html">Zumba</a></li>
+                                <li><a href="workout.html">Yoga</a></li>
+                                <li><a href="workout.html">Cycling</a></li>
+                            </ul>
+                        
+                    </div>
+                    <div class="colonne-3">
+                        
+                            <h5>Informations</h5>
+                            <ul class="footer-info">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Téléphone:</span>
+                                    +216 98 245 679
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>Email:</span>
+                                    <a href="mailto:info@motifit.com">info@motifit.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Addresse:</span>
+                                    24 Rue d'Istanboul, Tunis
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; 2023 Fitness & Bien-être. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script>function toggleClass(element) {
+            element.classList.toggle('hovered');
+        }</script>
+    </body>
+</html>
