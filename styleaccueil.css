@@ -1,0 +1,333 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    overflow: hidden;
+}
+body{
+    background-color: #e1e9f4;
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e1e9f4 ;
+    padding: 0px 10px;
+}
+
+/* Style for the logo */
+.logo img {
+    width: 195px;
+    height: 50px;
+}
+
+/* Style for the navbar */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+/* Style for the navbar links */
+.navbar li {
+    margin: 0 10px;
+}
+
+/* Style for the navbar links (active state) */
+.navbar .active {
+    font-weight: bold; 
+}
+nav ul a {
+    display: block;
+    color: #47484a;
+    text-decoration: none;
+}
+.carousel {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:   #47484a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+#next:hover {
+    background-color: #666f7a;
+}
+#prev:hover {
+    background-color: #666f7a;
+}
+
+.slide-content {
+    position: absolute;
+    top: 40%;
+    left:5%;
+    text-align: left;
+    color: #fff; /* Couleur du texte */
+    z-index: 2;
+    
+  }
+.slide-content h2 {
+    /*font-size: 2em; Taille de la police */
+    margin-bottom: 10px; /* Marge en bas */
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+
+  }
+  
+.slide-content p {
+    font-size: 1.2em; /* Taille de la police */
+    margin-bottom: 5px; /* Marge en bas */
+   
+ }
+.card {
+    width: 300px;
+    background-color: #e1e9f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #47484a;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: #a5bedc;
+    color: #666f7a;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+    color: #47484a;
+    font-weight: bold
+}
+.card-container-1 {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    margin-left: 14%;
+    padding-top: 2%;
+}
+.card-container-2 {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    margin-left: 14%;
+    margin-right: 10%;
+    padding-top: 2%;
+}
+.classe {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2%;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #47484a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #090909;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    margin-left: 20%;
+}
+.newsletter-container {
+    background-color: #e1e9f4;
+    margin-top: 5%;
+    width: 100%;
+    height: 500px;   
+}
+.form-container {
+    float: left;
+    width: 40%; /* Ajustez la largeur selon vos besoins */
+    padding-left: 2%;
+}
+.form-container h2{
+    padding-top: 25%;
+    /*padding-left: 2%;*/
+}
+.image-1{
+    float: right;
+    background-image: url("1.jpg");
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+    background-position: center center; /* Centre l'image horizontalement et verticalement */
+    width: 60%;
+    height: 100%; /* Ajustez la hauteur selon vos besoins */
+}
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.newsletter-container h2,.newsletter-container p{
+
+color: #47484a;
+}
+#bouton {
+    background-color: #a5bedc;
+    color: #47484a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bouton:hover {
+    background-color: #8596ab;
+    color: #e1e9f4;
+}
+/* Footer styles */
+.footer-section {
+    background-color: #47484a;
+    color: #e1e9f4;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+}
+
+.footer-logo-item {
+    margin-bottom: 30px;
+}
+
+.f-logo img {
+    width: 100px; /* Adjust the logo size as needed */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #e1e9f4;
+    font-size: 18px;
+}
+.social-links i:hover {
+     color: #a5bedc;
+}
+.container-1{
+    width: 100%;
+    padding-bottom: 20%;
+    margin-bottom: 0;
+}
+.colonne {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.colonne p {
+    padding-top: 20px;
+}
+.colonne-1{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.colonne-2{
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 {
+    width: 17%;
+    float: left;
+    box-sizing: border-box;
+}
+.colonne-3 a {
+    color: #e1e9f4;
+}
+.container-1 h5 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.footer-blog .links {
+    margin-bottom: 15px;
+    display: block;
+    color: #e1e9f4;
+    text-decoration: none;
+}
+.footer-blog .links:hover {
+    color: #a5bedc;
+}
+.workout-program li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.workout-program a {
+    color: #e1e9f4;
+    text-decoration: none;
+    font-size: 16px;
+}
+.workout-program a:hover {
+    color: #a5bedc;
+}
+.footer-info {
+    list-style: none;
+    padding: 0;
+}
+.footer-info li {
+    margin-bottom: 10px;
+}
+.footer-info i {
+    margin-right: 10px;
+    color: #a5bedc;
+}
+.copyright-text {
+    background-color: #1f1f1f;
+    padding: 5px 0;
+    margin-bottom: 0;
+    color: #e1e9f4;
+    font-size: 14px;
+    height: 60px;
+}
+.copyright-text p {
+    text-align: center;
+    padding-top: 15px;
+}

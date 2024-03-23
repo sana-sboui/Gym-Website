@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+    <title>Programmes d'Entraînement</title>
+    <!-- Styles CSS -->
+    
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index"><img src="logo.png" width="195" height="50"></a>
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="workout.html" class="active">Programmes d'Entraînement</a></li>
+            <li><a href="nutrition.html" >Nutrition</a></li>
+            <li><a href="testfinal.html">Témoignages Clients</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aboutfinal.html">À Propos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-image">
+         <div>NOS COURS DE FITNESS</div>
+        </div>
+    </header>
+
+    <section class="program-section">
+        <div class="p-container">
+            <div class="program" onclick="toggleClass(this)">
+                <div id="classes-wrap-1" style="background-image: url('boxe.jpg');">
+                    <div class="text">
+                        <h2><a href="#">Boxe</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="program" onclick="toggleClass(this)">
+                <div id="classes-wrap-2"  style="background-image: url('weightlifting.jpg');">
+                    <div class="text">
+                        <h2><a href="#">Musculation</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="program" onclick="toggleClass(this)">
+                <div id="classes-wrap-3" style="background-image: url('cardio.jpg');">
+                    <div class="text">
+                        <h2><a href="#">Cardio</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="p-container">
+            <div class="program" onclick="toggleClass(this)">
+                <div id="classes-wrap-1" style="background-image: url('zumba.jpg');">
+                    <div class="text">
+                        <h2><a href="#">Zumba</a></h2>
+                    </div>
+                </div>
+            </div> 
+                <div class="program" onclick="toggleClass(this)">
+                    <div id="classes-wrap-2" style="background-image: url('yoga.jpg');">
+                        <div class="text">
+                            <h2><a href="#">Yoga</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="program" onclick="toggleClass(this)">
+                    <div id="classes-wrap-3" style="background-image: url('cycling.jpg');">
+                        <div class="text">
+                            <h2><a href="#">Vélo</a></h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <span id="horaire">
+        <i class="fas fa-clock"></i>
+        Horaires des cours</span>
+    <div class="row">
+        <div class="classtime-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="workout-time">10.00</td>
+                        <td class="workout-day" >
+                        </td>
+                        <td class="workout-day" >
+                            <span>10.00 - 12.00</span>
+                            <h6>Yoga</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>10.00 - 12.00</span>
+                            <h6>Zumba</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>10.00 - 12.00</span>
+                            <h6>Boxe</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>10.00 - 12.00</span>
+                            <h6>Cardio</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>10.00 - 12.00</span>
+                            <h6>Boxe</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="workout-time">14.00</td>
+                        <td class="workout-day" >
+                            <span>14.00- 16.00</span>
+                            <h6>Boxe</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>14.00- 16.00</span>
+                            <h6>Musculation</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>14.00- 16.00</span>
+                            <h6>Yoga</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>14.00- 16.00</span>
+                            <h6>Zumba</h6>
+                        </td>
+                        <td class="workout-day" >
+                        </td>
+                        <td class="workout-day" >
+                            <span>14.00- 16.00</span>
+                            <h6>Vélo</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="workout-time">16.00</td>
+                        <td class="workout-day" >
+                            <span>16.00- 18.00</span>
+                            <h6>Yoga</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>16.00- 18.00</span>
+                            <h6>Boxe</h6>
+                        </td>
+                        <td class="workout-day" >
+                        </td>
+                        <td class="workout-day" >
+                            <span>16.00- 18.00</span>
+                            <h6>Vélo</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>16.00- 18.00</span>
+                            <h6>Musculation</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>16.00- 18.00</span>
+                            <h6>Cardio</h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="workout-time">18.00</td>
+                        <td class="workout-day" >
+                            <span>18.00- 20.00</span>
+                            <h6>Vélo</h6>
+                        </td>
+                        <td class="workout-day" >
+                        </td>
+                        <td class="workout-day" >
+                            <span>18.00- 20.00</span>
+                            <h6>Boxe</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>18.00- 20.00</span>
+                            <h6>Cardio</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>18.00- 20.00</span>
+                            <h6>Zumba</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>18.00- 20.00</span>
+                            <h6>Yoga</h6>
+                        </td>
+                    </tr>
+                   <tr>
+                        <td class="workout-time">20.00</td>
+                        <td class="workout-day" >
+                            <span>20.00- 22.00</span>
+                            <h6>Zumba</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>20.00- 22.00</span>
+                            <h6>Cardio</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>20.00- 22.00</span>
+                            <h6>Vélo</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>20.00- 22.00</span>
+                            <h6>Yoga</h6>
+                        </td>
+                        <td class="workout-day" >
+                            <span>20.00- 22.00</span>
+                            <h6>Cardio</h6>
+                        </td>
+                        <td class="workout-day" >
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <span id="pricing"><i class="fas fa-money-check"></i>Choisissez votre plan tarifiaire</span>
+    <section class="price-section">
+        
+        <div class="container" style="background-image: url('bras-entrainement-culturiste-bande-resistance.jpg');">     
+            <div class="ligne">
+                <div>
+                    <div class="single-price-plan" onclick="toggleClass(this)">
+                        <h4>Normal</h4>
+                        <div class="price-plan">
+                            <h2>55 DT</h2>
+                            <p>Par Mois</p>
+                        </div>
+                        <ul>
+                            <li class="elementl">Accès illimité à la salle de sport</li>
+                            <li class="elementl">1 cours par semaine</li>
+                            <li class="elementl">Forfait boisson GRATUIT</li>
+                            <li class="elementl">1 séance personnelle gratuite</li>
+                        </ul>
+                        <a href="" id="button">S'inscrire</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="single-price-plan">
+                        <h4>Professionnel</h4>
+                        <div class="price-plan">
+                            <h2>95 DT</h2>
+                            <p>Par Mois</p>
+                        </div>
+                        <ul>
+                            <li class="elementl">Accès illimité à la salle de sport</li>
+                            <li class="elementl">2 cours par semaine</li>
+                            <li class="elementl">Forfait boisson GRATUIT</li>
+                            <li class="elementl">2 séances personnelles gratuites</li>
+                        </ul>
+                        <a href="" id="button">S'inscrire</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="single-price-plan">
+                        <h4>Avancé</h4>
+                        <div class="price-plan">
+                            <h2>165 DT</h2>
+                            <p>Par Mois</p>
+                        </div>
+                        <ul>
+                            <li class="elementl">Accès illimité à la salle de sport</li>
+                            <li class="elementl">6 cours par semaine</li>
+                            <li class="elementl">Forfait boisson GRATUIT</li>
+                            <li class="elementl">5 séances personnelles gratuits</li>
+                        </ul>
+                        <a href="" id="button">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pied de page -->
+    <footer class="footer-section">
+        <div class="container-1">
+            <div class="row-2">
+                <div class="colonne">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="index.html"><img src="logo.png" alt></a>
+                        </div>
+                        <p>Découvrez MOTIFIT, votre destination pour la remise en forme optimale. Une salle de sport où la passion et la performance se rencontrent.</p>
+                        <div class="social-links">
+                            <h6 style="font-size: 20px;">Suivez Nous</h6>
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://fr.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="colonne-1">
+                    
+                        <h5>Liens Utiles</h5>
+                        <div class="footer-blog">
+                            <a href="workout.html" class="links"><i class="fa-solid fa-arrow-right"></i>Programmes d'Entraînement</a>
+                            <a href="nutrition.html" class="links"><i class="fa-solid fa-arrow-right"></i>Nutrition</a>
+                            <a href="testfinal.html" class="links"><i class="fa-solid fa-arrow-right"></i>Témoignages Clients</a>
+                            <a href="blog.html" class="links"><i class="fa-solid fa-arrow-right"></i>Blog</a>
+                            <a href="galerie.html" class="links"><i class="fa-solid fa-arrow-right"></i>Galerie</a>
+                            <a href="contact.html" class="links"><i class="fa-solid fa-arrow-right"></i>Contact</a>
+                            <a href="aboutfinal.html" class="links"><i class="fa-solid fa-arrow-right"></i>À Propos</a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="colonne-2">
+                    
+                        <h5>Programmes</h5>
+                        <ul class="workout-program">
+                            <li><a href="workout.html">Boxe</a></li>
+                            <li><a href="workout.html">Musculation</a></li>
+                            <li><a href="workout.html">Cardio</a></li>
+                            <li><a href="workout.html">Zumba</a></li>
+                            <li><a href="workout.html">Yoga</a></li>
+                            <li><a href="workout.html">Vélo</a></li>
+                        </ul>
+                    
+                </div>
+                <div class="colonne-3">
+                    
+                        <h5>Informations</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Téléphone:</span>
+                                +216 98 245 679
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email:</span>
+                                <a href="mailto:info@motifit.com">info@motifit.com</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Addresse:</span>
+                                24 Rue d'Istanboul, Tunis
+                            </li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <p>&copy; 2023 Fitness & Bien-être. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <script src="scriptworkout.js"></script>
+</body>
+</html>
